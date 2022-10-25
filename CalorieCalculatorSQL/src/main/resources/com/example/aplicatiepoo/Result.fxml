@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicatiepoo.ResultController">
+   <children>
+      <VBox layoutX="210.0" layoutY="114.0" prefHeight="71.0" prefWidth="181.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="193.0" text="Maintain weight">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="36.0" prefWidth="193.0">
+               <children>
+                  <Label fx:id="resultLabel" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #50C878;" text="calories">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabel1" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #50C878;" text="Calories / day" textFill="#575757" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="71.0" prefWidth="181.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="193.0" text="Mild weight loss">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="36.0" prefWidth="193.0">
+               <children>
+                  <Label fx:id="mildLabel" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #50C878;" text="calories">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabel11" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #50C878;" text="Calories / day" textFill="#575757" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="405.0" layoutY="14.0" prefHeight="71.0" prefWidth="181.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="193.0" text="Mild weight gain">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="36.0" prefWidth="193.0">
+               <children>
+                  <Label fx:id="mildGainLabel" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #50C878;" text="calories">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabel12" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #50C878;" text="Calories / day" textFill="#575757" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="114.0" prefHeight="71.0" prefWidth="181.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="193.0" text="Weight loss">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="36.0" prefWidth="193.0">
+               <children>
+                  <Label fx:id="weightLossLabel" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #50C878;" text="calories">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabel111" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #50C878;" text="Calories / day" textFill="#575757" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="219.0" prefHeight="71.0" prefWidth="181.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="193.0" text="Extreme weight loss">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="36.0" prefWidth="193.0">
+               <children>
+                  <Label fx:id="eWeightLossLabel" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #50C878;" text="calories">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabel1111" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #50C878;" text="Calories / day" textFill="#575757" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="405.0" layoutY="114.0" prefHeight="71.0" prefWidth="181.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="193.0" text="Weight gain">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="36.0" prefWidth="193.0">
+               <children>
+                  <Label fx:id="weightGainLabel" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #50C878;" text="calories">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabel121" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #50C878;" text="Calories / day" textFill="#575757" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="405.0" layoutY="219.0" prefHeight="71.0" prefWidth="181.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="193.0" text="Fast weight gain">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="36.0" prefWidth="193.0">
+               <children>
+                  <Label fx:id="fWeightGainLabel" alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #50C878;" text="calories">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabel1211" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #50C878;" text="Calories / day" textFill="#575757" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="exitButton" layoutX="274.0" layoutY="315.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="25.0" prefWidth="42.0" text="exit" />
+   </children>
+</AnchorPane>
