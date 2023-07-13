@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="900.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.fahrradverwaltung.EmployeeAddBikeController">
+
+    <VBox AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" prefHeight="70" style="-fx-background-color: #000000; -fx-alignment: CENTER;">
+        <HBox spacing="10" alignment="CENTER" VBox.vgrow="NEVER">
+            <Button fx:id="addBikeButton" text="Add Bike" onAction="#addBike" minWidth="100" style="-fx-font-size: 14; -fx-background-color: white; -fx-text-fill: black;"/>
+            <Button fx:id="clientsButton" text="Clients" onAction="#viewClients" minWidth="100" style="-fx-font-size: 14; -fx-background-color: white; -fx-text-fill: black;"/>
+            <Button fx:id="logoutButton" text="Logout" onAction="#logout" minWidth="100" style="-fx-font-size: 14; -fx-background-color: white; -fx-text-fill: black;"/>
+        </HBox>
+    </VBox>
+
+    <GridPane AnchorPane.topAnchor="90" AnchorPane.leftAnchor="190" hgap="10" vgap="10">
+        <Label text="Bike Name" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-text-fill: black;"/>
+        <TextField fx:id="bikeNameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label text="Bike ID" GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-text-fill: black;"/>
+        <TextField fx:id="bikeIDField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="Battery" GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-text-fill: black;"/>
+        <TextField fx:id="batteryField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label text="Price/Day" GridPane.columnIndex="0" GridPane.rowIndex="3" style="-fx-text-fill: black;"/>
+        <TextField fx:id="priceField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Label text="Rented by" GridPane.columnIndex="0" GridPane.rowIndex="4" style="-fx-text-fill: black;"/>
+        <TextField fx:id="rentedByField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <Label text="Rented until" GridPane.columnIndex="0" GridPane.rowIndex="5" style="-fx-text-fill: black;"/>
+        <TextField fx:id="rentedUntilField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    </GridPane>
+
+    <VBox AnchorPane.topAnchor="150" AnchorPane.leftAnchor="500" spacing="10">
+        <Button fx:id="addButton" onAction="#addNewBike" text="Add" minWidth="100" style="-fx-font-size: 14; -fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+        <Button fx:id="deleteButton" onAction="#deleteBike" text="Delete" minWidth="100" style="-fx-font-size: 14; -fx-background-color: #f44336; -fx-text-fill: white;"/>
+    </VBox>
+
+    <TableView fx:id="bikeTable" AnchorPane.topAnchor="310" AnchorPane.leftAnchor="30" AnchorPane.rightAnchor="30">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="100"/>
+            <TableColumn fx:id="nameColumn" text="Name" prefWidth="200"/>
+            <TableColumn fx:id="batteryColumn" text="Battery" prefWidth="100"/>
+            <TableColumn fx:id="priceColumn" text="Price/Day" prefWidth="100"/>
+            <TableColumn fx:id="rentedByColumn" text="Rented by" prefWidth="100"/>
+            <TableColumn fx:id="rentedUntilColumn" text="Rented until" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+</AnchorPane>

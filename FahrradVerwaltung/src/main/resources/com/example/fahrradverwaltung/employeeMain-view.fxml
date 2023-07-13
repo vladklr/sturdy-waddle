@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="600.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.fahrradverwaltung.EmployeeMainController">
+
+    <VBox AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" prefHeight="70" style="-fx-background-color: #000000; -fx-alignment: CENTER;">
+        <HBox spacing="10" alignment="CENTER" VBox.vgrow="NEVER">
+            <Button fx:id="addBikeButton" text="Add Bike" onAction="#addBike" minWidth="100" style="-fx-font-size: 14; -fx-background-color: white; -fx-text-fill: black;"/>
+            <Button fx:id="clientsButton" text="Clients" onAction="#viewClients" minWidth="100" style="-fx-font-size: 14; -fx-background-color: white; -fx-text-fill: black;"/>
+            <Button fx:id="logoutButton" text="Logout" onAction="#logout" minWidth="100" style="-fx-font-size: 14; -fx-background-color: white; -fx-text-fill: black;"/>
+        </HBox>
+    </VBox>
+
+</AnchorPane>
